@@ -44,7 +44,7 @@ func createHandler(w http.ResponseWriter, r *http.Request) {
 
 func updateHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPut {
-		http.Error(w, "Ожидается PUT-запрос", http.StatusMethodNotAllowed)
+		http.Error(w, "Ожидается PUT-запрос. Вы лоххххх", http.StatusMethodNotAllowed)
 		return
 	}
 	body, err := ioutil.ReadAll(r.Body)
